@@ -1,17 +1,65 @@
 '''
 Exercícios sobre os comandos básicos em Python
 '''
-
+#------------------------------------------------------------------------------------------------------------------------------------------------------#
 #1. Faça um programa que imprima o seu nome.
+
+
+#nome = str(input ('Digite seu nome: '))
+#print(f'Olá {nome}. Seja bem vindo(a)!')
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------#
 
 #2. Faça um programa que imprima o produto dos valores 30 e 27.
 
+
+#valor1 = int(input('Digite o primeiro valor: '))
+#valor2 = int(input('Digite o segundo valor: '))
+
+#produto = (valor1*valor2)
+
+
+#print(f'O valor do produto é : {produto}')
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------#
+
 #3. Faça um programa que imprima a média aritmética entre os números 5, 8, 12.
 
+#num1 = int(input('Digite o primeiro número: '))
+#num2 = int(input('Digite o segundo número: '))
+#num3 = int(input('Digite o terceiro número: '))
+
+
+#media = (num1 + num2 + num3) / 3
+
+
+#print(f'A média entre os números é: {media}')
+
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------#
 #4. Faça um programa que leia e imprima um número inteiro.
 
+
+
+
+
+
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------#
 #5. Faça um programa que leia dois números reais e os imprima.
 
+
+
+
+
+
+
+
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------#
 #6. Faça um programa que leia um número inteiro e imprima o seu
 #   antecessor e o seu sucessor.
 
