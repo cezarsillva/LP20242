@@ -30,7 +30,7 @@ Exercícios sobre os comandos básicos em Python
 #num3 = int(input('Digite o terceiro número: '))
 
 
-#media = (num1 + num2 + num3) / 3
+#media = ((num1 + num2 + num3) / 3)
 
 
 #print(f'A média entre os números é: {media}')
@@ -40,8 +40,9 @@ Exercícios sobre os comandos básicos em Python
 #------------------------------------------------------------------------------------------------------------------------------------------------------#
 #4. Faça um programa que leia e imprima um número inteiro.
 
+#numero = int(input('Digite um numero inteiro: '))
 
-
+#print(f'O número inteiro é: {numero}')
 
 
 
@@ -51,6 +52,58 @@ Exercícios sobre os comandos básicos em Python
 #5. Faça um programa que leia dois números reais e os imprima.
 
 
+#numero1 = float(input('Digite o primeiro número real: '))
+#numero2 = float(input('Digite o segundo número real: '))
+
+
+
+#print(f'O primeiro número real é: {numero1}. E o segundo número real é: {numero2}.')
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------#
+#6. Faça um programa que leia um número inteiro e imprima o seu
+#   antecessor e o seu sucessor.
+
+
+
+#numero = int(input('Digite um número: '))
+
+
+
+#print(f'O número Antecessor é: {numero - 1}')
+#print(f'O número Sucessor é: {numero + 1}')
+
+
+
+
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------#
+
+#7. Faça um programa que leia o nome o endereço e o telefone de
+#   um cliente e ao final, imprima esses dados.
+
+
+endereço = str(input('Digite o endereço do Cliente: '))
+telefone = int(input('Digite o telefone do Cliente: '))
+
+
+print(f'O endereço do cliente é: {endereço}')
+print(f'O telefone do cliente é: {telefone}')
+
+
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------#
+#8. Faça um programa que leia dois números inteiros e imprima a
+#   subtração deles.
+
+
+
+
+
+
+
 
 
 
@@ -60,15 +113,6 @@ Exercícios sobre os comandos básicos em Python
 
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------#
-#6. Faça um programa que leia um número inteiro e imprima o seu
-#   antecessor e o seu sucessor.
-
-#7. Faça um programa que leia o nome o endereço e o telefone de
-#   um cliente e ao final, imprima esses dados.
-
-#8. Faça um programa que leia dois números inteiros e imprima a
-#   subtração deles.
-
 #9. Faça um programa que leia um número real e imprima ¼ deste número.
 
 #10. Faça um programa que leia três números reais e calcule a
