@@ -100,7 +100,8 @@ print(f'O telefone do cliente é: {telefone}')
 
 
 
-
+num1 = int(input('Digite o primeiro número: '))
+num2 = 
 
 
 
