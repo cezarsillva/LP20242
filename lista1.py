@@ -1,3 +1,8 @@
+#               https://github.com/ifmt-cba/lp20242
+#               github.com/jppreti/documents
+
+
+
 #-----------------------------Lista 1-------------------------------------#
 
 
@@ -8,10 +13,7 @@
 
 #1. Faça um programa que imprima o seu nome.
 
-#print(f'exercicios 1') 
-
-
-#nome = input ('Digite seu nome: ')
+#nome = input('Digite seu nome: ')
 #print(f'Olá {nome}. Seja bem vindo(a)!')
 
 #print(f'------------------------------------------------------------------------') 
@@ -77,8 +79,6 @@
 
 #7. Faça um programa que leia o nome o endereço e o telefone de
 #   um cliente e ao final, imprima esses dados.
-
-
 
 
 #nome= str(input ('Digite o nome do cliente: '))
@@ -290,15 +290,15 @@
 #    quantidade de litros consumidos na viagem.
 
 
-#tempo = int(input ('Digite o tempo gasto na viagem em minutos:'))
-#velocidademedia = int(input ('Digite a velocidade média usada durante a viagem em km/h:'))
+#tempo = int(input ('Digite o tempo gasto na viagem em minutos: '))
+#velocidademedia = int(input ('Digite a velocidade média usada durante a viagem em km/h: '))
 
 #Distancia = (tempo/60 * velocidademedia)
 
 #combustiveltotal =  (Distancia /  12 )
 
-#print(f'A distancia percorrida é : {Distancia} km')
-#print(f'A quantidade de litros consumidos na viagem é: {combustiveltotal}Litros')
+#print(f'A distancia percorrida é : {Distancia} km ')
+#print(f'A quantidade de litros consumidos na viagem é: {combustiveltotal} Litros ')
 
 
 
