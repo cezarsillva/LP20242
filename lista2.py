@@ -1,37 +1,146 @@
 '''
 Exercícios sobre os comandos de condição em python
 '''
-
+#---------------------------------------------------------------------------------------------------------------------------------------#
 #1. Faça um programa que leia dois valores numéricos inteiros e efetue
 #   a adição, caso o resultado seja maior que 10, apresentá-lo.
 
+
+#num1 = int(input('Digite o primeiro número: '))
+#num2 = int(input('Digite o segundo número: '))
+
+
+#soma = (num1 + num2)
+
+
+#if soma >= 10:
+#    print(f'A soma é maior que 10: {soma}')
+#else:
+#    print(f'A soma é menor que 10. {soma}')
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
 #2. Faça um programa que leia dois valores inteiros e efetue a adição.
 #   Caso o valor somado seja maior que 20, este deverá ser apresentado
 #   somando-se a ele mais 8, caso o valor somado seja menor ou igual a
 #   20, este deverá ser apresentado subtraindo-se 5.
 
+
+#valor1 = int(input('Digite o primeiro valor: '))
+#valor2 = int(input('Digite o segundo valor: '))
+
+#soma = valor1 + valor2
+
+#if soma > 20:
+#    print(f'O Valor somado é {soma} então adiciona 8 : {soma + 8}')
+
+#elif soma <= 20:
+#    print(f'O valor somado é {soma} então subtrai 5 : {soma - 5}')
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
 #3. Faça um programa que leia um número e imprima uma das duas mensagens:
 #   "É múltiplo de 3"ou "Não é múltiplo de 3".
 
+
+#num = int(input('Digite o valor: '))
+
+#if num % 3 == 0:
+#    print(f' O valor {num} é múltiplo de 3.')
+#else:
+#    print(f'O valor não é múltiplo de 3.')
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
 #4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
 
+
+#num = int(input('Digite o valor desejado: '))
+
+
+#if num % 5 == 0:
+#    print(f' O valor {num} é divisível de 5.')
+#else:
+#    print(f'O valor {num} não é divisível de 5.')
+   
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
 #5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
 
+#num = int(input('Digite o número desejado: '))
+
+
+#if num % 3 == 0 and num % 7 == 0:
+#    print(f'O valor digitado é divisível por 3 e por 7.')
+
+#else:
+#    print(f'O valor digitado não é divisível por 3 e nem por 7.')
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
 #6. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários
 #   estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário
 #   bruto. Faça um programa que permita entrar com o salário bruto
 #   e o valor da prestação e informar se o empréstimo pode ou não ser concedido.
 
+
+
+
+
+
+
+
+
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
 #7. Faça um programa que leia um número e indique se o número está compreendido
 #   entre 20 e 50 ou não.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
 #8. Faça um programa que leia um número e imprima uma das mensagens:
 #   "Maior do que 20", "Igual a 20"ou "Menor do que 20".
 
+
+
+
+
+
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
 #9. Faça um programa que permita entrar com o ano de nascimento da pessoa e com o
 #   ano atual. O programa deve imprimir a idade da pessoa. Não se esqueça de
 #   verificar se o ano de nascimento informado é válido.
 
+
+
+
+
+
+
+
+
+
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
 #10. Faça um programa que leia três números inteiros e imprima os três em ordem
 #crescente.
 
