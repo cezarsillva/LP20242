@@ -84,12 +84,14 @@ Exercícios sobre os comandos de condição em python
 #   e o valor da prestação e informar se o empréstimo pode ou não ser concedido.
 
 
+#salario_bruto = float(input('Digite o Salário Bruto: '))
+#valor_prestacao = float(input('Digite o valor da pretação: '))
 
 
-
-
-
-
+#if valor_prestacao > salario_bruto * 0.3:
+#    print(f'Emprestimo não liberado.')
+#else:
+#    print(f'Emprestimo  liberado.')
 
 
 
@@ -99,15 +101,13 @@ Exercícios sobre os comandos de condição em python
 #   entre 20 e 50 ou não.
 
 
+#num = int(input('Digite um número qualquer: '))
 
 
-
-
-
-
-
-
-
+#if num > 20 and num < 50:
+#    print(f'Valor está entre os números 20 e 50. ')
+#else:
+#    print(f'Valor não está entre os números 20 e 50. ')
 
 
 
@@ -115,12 +115,15 @@ Exercícios sobre os comandos de condição em python
 #8. Faça um programa que leia um número e imprima uma das mensagens:
 #   "Maior do que 20", "Igual a 20"ou "Menor do que 20".
 
+#num = int(input('Digite um número qualquer: '))
 
 
-
-
-
-
+#if num > 20:
+#    print(f'O número é maior que 20. ')
+#elif num == 20:
+#    print(f'O número é igual a 20. ')
+#else:
+#    print(f'O número é menor que 20. ')
 
 
 #---------------------------------------------------------------------------------------------------------------------------------------#
@@ -129,6 +132,38 @@ Exercícios sobre os comandos de condição em python
 #   verificar se o ano de nascimento informado é válido.
 
 
+ano_nascimento = int(input('Digite o ano de nascimento da pessoa: '))
+ano_atual = int(input('Digite o ano atual: '))
+
+
+idade_pessoa = (ano_atual - ano_nascimento)
+
+if ano_nascimento > ano_atual:
+    print(f'O ano do nascimento é inválido.')
+else:
+    print(f'A idade da pessoa é: {idade_pessoa} anos.')
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
+#10. Faça um programa que leia três números inteiros e imprima os três em ordem
+#crescente.
+
+
+
+num1 = int(input('Digite o primeiro número: '))
+num2 = int(input('Digite o segundo número: '))
+num3 = int(input('Digite o terceiro número: '))
+
+
+if num1 > num2 and num1 > num3:
+    print(num1)
+elif num2 > num1 and num2 > num3:
+    
+
+
+
+
+
 
 
 
@@ -141,9 +176,6 @@ Exercícios sobre os comandos de condição em python
 
 
 #---------------------------------------------------------------------------------------------------------------------------------------#
-#10. Faça um programa que leia três números inteiros e imprima os três em ordem
-#crescente.
-
 #11. Faça um programa que leia 3 números e imprima o maior deles.
 
 #12. Faça um programa que leia a idade de uma pessoa e informe:

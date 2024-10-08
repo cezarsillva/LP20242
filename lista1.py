@@ -301,7 +301,6 @@
 #print(f'A quantidade de litros consumidos na viagem é: {combustiveltotal} Litros ')
 
 
-
 #print(f'------------------------------------------------------------------------')
 
 
