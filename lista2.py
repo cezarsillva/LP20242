@@ -289,20 +289,16 @@ Exercícios sobre os comandos de condição em python
 #Faça um programa que leia o valor do produto e imprima o valor da venda.
 
 
+valor_produto = float(input('Digite o valor do produto: '))
 
 
+lucro1 = valor_produto * 45 / 100
+lucro2 = valor_produto * 30 / 100
 
-
-
-
-
-
-
-
-
-
-
-
+if valor_produto < 20:
+    print(f'O valor da venda é: {valor_produto + lucro1}')
+else:
+    print(f'O valor da venda é {valor_produto + lucro2}')
 
 
 
