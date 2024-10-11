@@ -132,16 +132,17 @@ Exercícios sobre os comandos de condição em python
 #   verificar se o ano de nascimento informado é válido.
 
 
-ano_nascimento = int(input('Digite o ano de nascimento da pessoa: '))
-ano_atual = int(input('Digite o ano atual: '))
+
+#ano_nascimento = int(input('Digite o ano de nascimento da pessoa: '))
+#ano_atual = int(input('Digite o ano atual: '))
 
 
-idade_pessoa = (ano_atual - ano_nascimento)
+#idade_pessoa = (ano_atual - ano_nascimento)
 
-if ano_nascimento > ano_atual:
-    print(f'O ano do nascimento é inválido.')
-else:
-    print(f'A idade da pessoa é: {idade_pessoa} anos.')
+#if ano_nascimento > ano_atual:
+    #print(f'O ano do nascimento é inválido.')
+#else:
+    #print(f'A idade da pessoa é: {idade_pessoa} anos.')
 
 
 #---------------------------------------------------------------------------------------------------------------------------------------#
@@ -150,15 +151,145 @@ else:
 
 
 
-num1 = int(input('Digite o primeiro número: '))
-num2 = int(input('Digite o segundo número: '))
-num3 = int(input('Digite o terceiro número: '))
+#num1 = int(input('Digite o primeiro número: '))
+#num2 = int(input('Digite o segundo número: '))
+#num3 = int(input('Digite o terceiro número: '))
 
 
-if num1 > num2 and num1 > num3:
-    print(num1)
-elif num2 > num1 and num2 > num3:
+
+#if num1 < num2 < num3:
     
+    #print(f' {num1} - {num2} - {num3} ')
+
+#elif num1 < num3 < num2:
+    
+    #print(f' {num1} - {num3} - {num2} ')
+
+#elif num2 < num1 < num3:
+    
+    #print(f' {num2} - {num1} - {num3} ')
+
+#elif num2 < num3 < num1:
+    
+    #print(f' {num2} - {num3} - {num1} ')
+
+#elif num3 < num1 < num2:
+    
+    #print(f' {num3} - {num1} - {num2} ')
+
+#elif num3 < num2 < num1:
+    
+    #print(f' {num3} - {num2} - {num1} ')
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
+#11. Faça um programa que leia 3 números e imprima o maior deles.
+
+
+#num1 = int(input ('Digite o primeiro número: '))
+#num2 = int(input ('Digite o segundo número: '))
+#num3 = int(input ('Digite o terceiro número: '))
+
+# if num1 > num2 > num3:
+    
+#     print(f' {num1}  ')
+
+# elif num1 > num3 > num2:
+    
+#     print(f' {num1} ')
+
+# elif num2 > num1 > num3:
+    
+#     print(f' {num2} ')
+
+# elif num2 > num3 > num1:
+    
+#     print(f' {num2} ')
+
+# elif num3 > num1 > num2:
+    
+#     print(f' {num3} ')
+
+# elif num3 > num2 > num1:
+    
+#     print(f' {num3} ')
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
+#12. Faça um programa que leia a idade de uma pessoa e informe:
+#• Se é maior de idade
+#• Se é menor de idadea
+#• Se é maior de 65 anos
+
+
+# idade = int(input('Digite a idade da Pessoa: '))
+
+
+# if idade < 18:
+#     print('A pessoa é menor de 18 anos.')
+# elif idade >= 18 and idade < 65:
+#     print('A pessoa é maior de idade.')
+# else:
+#     print('A pessoa tem mais de 65 anos')
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
+#13. Faça um programa que permita entrar com o nome, a nota da prova 1 e a nota
+#da prova 2 de um aluno. O programa deve imprimir o nome, a nota da prova 1,
+#a nota da prova 2, a média das notas e uma das mensagens: "Aprovado",
+#"Reprovado"ou "em Prova Final"(a média é 7 para aprovação, menor que 3 para
+#reprovação e as demais em prova final).
+
+
+
+# nome = str(input('Digite o nome do aluno: '))
+# nota1 = float(input('Digite a primeira nota do aluno: '))
+# nota2 = float(input('Digite a segunda nota do aluno: '))
+
+
+# media = (nota1 + nota2) / 2
+
+# print(f'A media do aluno {nome} é: {media}')
+
+
+# if media >= 7:
+#     print('Aluno aprovado.')
+# elif media < 3:
+#     print('Aluno reprovado.')
+# else:
+#     print('Aluno prova final.')
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
+#14. Faça um programa que permita entrar com o salário de uma pessoa e imprima o
+#desconto do INSS segundo a tabela seguir:
+#Salário Faixa de Desconto
+#Menor ou igual à R$600,00 Isento
+#Maior que R$600,00 e menor ou igual a R$1200,00 20%
+#Maior que R$1200,00 e menor ou igual a R$2000,00 25%
+#Maior que R$2000,00 30%
+
+
+
+# salario = float(input('Digite o valor do salário: '))
+
+# if salario <= 600:
+#     print('Isento de Taxa.')
+# elif salario > 600 and salario <=1200:
+#     print('O desconto será de 20%.')
+# elif salario > 1200 and salario <= 2000:
+#     print('O desconto será de 25%. ')
+# else:
+#     print('O desconto é de 30%.')
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
+#15. Um comerciante comprou um produto e quer vendê-lo com um lucro de 45% se o
+#valor da compra for menor que R$20,00, caso contrário, o lucro será de 30%.
+#Faça um programa que leia o valor do produto e imprima o valor da venda.
+
+
+
 
 
 
@@ -176,31 +307,6 @@ elif num2 > num1 and num2 > num3:
 
 
 #---------------------------------------------------------------------------------------------------------------------------------------#
-#11. Faça um programa que leia 3 números e imprima o maior deles.
-
-#12. Faça um programa que leia a idade de uma pessoa e informe:
-#• Se é maior de idade
-#• Se é menor de idadea
-#• Se é maior de 65 anos
-
-#13. Faça um programa que permita entrar com o nome, a nota da prova 1 e a nota
-#da prova 2 de um aluno. O programa deve imprimir o nome, a nota da prova 1,
-#a nota da prova 2, a média das notas e uma das mensagens: "Aprovado",
-#"Reprovado"ou "em Prova Final"(a média é 7 para aprovação, menor que 3 para
-#reprovação e as demais em prova final).
-
-#14. Faça um programa que permita entrar com o salário de uma pessoa e imprima o
-#desconto do INSS segundo a tabela seguir:
-#Salário Faixa de Desconto
-#Menor ou igual à R$600,00 Isento
-#Maior que R$600,00 e menor ou igual a R$1200,00 20%
-#Maior que R$1200,00 e menor ou igual a R$2000,00 25%
-#Maior que R$2000,00 30%
-
-#15. Um comerciante comprou um produto e quer vendê-lo com um lucro de 45% se o
-#valor da compra for menor que R$20,00, caso contrário, o lucro será de 30%.
-#Faça um programa que leia o valor do produto e imprima o valor da venda.
-
 #16. A confederação brasileira de natação irá promover eliminatórias para o
 #próximo mundial. Faça um programa que receba a idade de um nadador e imprima
 #a sua categoria segundo a tabela a seguir:
