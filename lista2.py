@@ -370,24 +370,51 @@ Exercícios sobre os comandos de condição em python
 #correspondente. Caso o usuário digite um número fora desse intervalo, deverá
 #aparecer uma mensagem informando que não existe mês com este número.
 
+# mes = int(input('Digite o um número de 1 a 12 de acordo com o mês correspondente: '))
+
+# if mes == 1:
+#     print(f'JANEIRO')
+# elif mes == 2:
+#     print(f'FEVEREIRO')
+# elif mes == 3:
+#     print(f'MARÇO')
+# elif mes == 4:
+#     print(f'ABRIL')
+# elif mes == 5:
+#     print(f'MAIO')
+# elif mes == 6:
+#     print(f'JUNHO')
+# elif mes == 7:
+#     print(f'JULHO')
+# elif mes == 8:
+#     print(f'AGOSTO')
+# elif mes == 9:
+#     print(f'SETEMBRO')
+# elif mes == 10:
+#     print(f'OUTUBRO')
+# elif mes == 11:
+#     print(f'NOVEMBRO')
+# elif mes == 12:
+#     print(f'NOVEMBRO')
+# else:
+#     print(f'MÊS INVÁLIDO')
 
 
+##########################################################################################################################################
+
+#Exemplo Prof com biblioteca:
+
+# mes = int(input('Digite o um número de 1 a 12 de acordo com o mês correspondente: '))
+
+# if mes <1 or me >12:
+#     print('Mês Inválido')
+# else:
+#     data = datetime.strptime(f'01/{mes}/24','%d/%m/%y')
+#     mes_extenso = data.strftime('%B')
+#     print(tradutor.translate(mes_extenso))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+##########################################################################################################################################
 
 #---------------------------------------------------------------------------------------------------------------------------------------#
 #19. Em um campeonato nacional de arco-e-flecha, tem-se equipes de três jogadores
@@ -400,35 +427,46 @@ Exercícios sobre os comandos de condição em python
 #  caso contrário, imprimir a mensagem "Equipe desclassificada".
 
 
+# jogador1= float(input ('Digite a nota do primeiro jogador: '))
+# jogador2= float(input ('Digite a nota do segundo jogador: '))
+# jogador3= float(input ('Digite a nota do primeiro jogador: '))
 
 
+# soma = jogador1 + jogador2 + jogador3
 
 
+# if soma > 100:
+#     print(f'Resultado maior que 100 então sua média é: {soma / 3}.')
+#     print(f'"A equipe foi classificada."')
+# else:
+#     print(f'Equipe Desclassificada.')
 
+# if jogador1 > jogador2 > jogador3:
+    
+#     print(f' {jogador1} - {jogador2} - {jogador3} ')
 
+# elif jogador1 > jogador3 > jogador2:
+    
+#     print(f' {jogador1} - {jogador3} - {jogador2} ')
 
+# elif jogador2 > jogador1 > jogador3:
+    
+#     print(f' {jogador2} - {jogador1} - {jogador3} ')
 
+# elif jogador2 > jogador3 > jogador1:
+    
+#     print(f' {jogador2} - {jogador3} - {jogador1} ')
 
+# elif jogador3 > jogador1 > jogador2:
+    
+#     print(f' {jogador3} - {jogador1} - {jogador2} ')
 
+# elif jogador3 > jogador2 > jogador1:
+    
+#     print(f' {jogador3} - {jogador2} - {jogador1} ')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# else:
+#     print('Erro desconhecido.')
 
 #---------------------------------------------------------------------------------------------------------------------------------------#
 #20. O banco XXX concederá um crédito especial com juros de 2% aos seus clientes de
@@ -443,39 +481,17 @@ Exercícios sobre os comandos de condição em python
 #acima de 3001 50% do valor do saldo médio
 
 
+saldo = int(input('Digite o saldo do cliente: '))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if saldo > 0 and saldo < 500:
+    print(f'Nenhum crédito.')
+elif saldo > 501 and saldo < 1000:
+    print(f'O cliente tem direito a 30% do valor do saldo médio. ')
+elif saldo > 1001 and saldo < 3000:
+    print(f'O cliente tem direito a 40% do valor do saldo médio. ')
+else:
+    print(f'O cliente tem direito a 50% do valor do saldo médio. ')
 
 
 #---------------------------------------------------------------------------------------------------------------------------------------#
@@ -486,6 +502,18 @@ Exercícios sobre os comandos de condição em python
 #• Nome do livro:
 #• Tipo de usuário:
 #• Total de dias:
+
+nome_livro = str('input(Digite o nome do Livro: '))
+usuario = int(input('Digite para Aluno: 1 e para Professor: 2: '))
+total_dias = int(inpu('Digite o total de dias para cada usuário: '))
+
+
+
+if usuario == 1 and
+
+
+
+
 
 
 
@@ -520,6 +548,42 @@ Exercícios sobre os comandos de condição em python
 #informe o consumo estimado de combustível, sabendo-se que um carro tipo A faz
 #12 km com um litro de gasolina, um tipo B faz 9 km e o tipo C 8 km por litro.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------#
 #23. Crie um programa que informe a quantidade total de calorias de uma refeição
 #a partir da escolha do usuário que deverá informar o prato, a sobremesa, e
 #bebida conforme a tabela a seguir.
