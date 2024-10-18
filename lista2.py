@@ -481,17 +481,17 @@ Exercícios sobre os comandos de condição em python
 #acima de 3001 50% do valor do saldo médio
 
 
-saldo = int(input('Digite o saldo do cliente: '))
+# saldo = int(input('Digite o saldo do cliente: '))
 
 
-if saldo > 0 and saldo < 500:
-    print(f'Nenhum crédito.')
-elif saldo > 501 and saldo < 1000:
-    print(f'O cliente tem direito a 30% do valor do saldo médio. ')
-elif saldo > 1001 and saldo < 3000:
-    print(f'O cliente tem direito a 40% do valor do saldo médio. ')
-else:
-    print(f'O cliente tem direito a 50% do valor do saldo médio. ')
+# if saldo > 0 and saldo < 500:
+#     print(f'Nenhum crédito.')
+# elif saldo > 501 and saldo < 1000:
+#     print(f'O cliente tem direito a 30% do valor do saldo médio. ')
+# elif saldo > 1001 and saldo < 3000:
+#     print(f'O cliente tem direito a 40% do valor do saldo médio. ')
+# else:
+#     print(f'O cliente tem direito a 50% do valor do saldo médio. ')
 
 
 #---------------------------------------------------------------------------------------------------------------------------------------#
@@ -502,14 +502,15 @@ else:
 #• Nome do livro:
 #• Tipo de usuário:
 #• Total de dias:
-
-nome_livro = str('input(Digite o nome do Livro: '))
+nome = str(input('Digite o nome do Usuário: '))
+nome_livro = str(input('Digite o nome do Livro: '))
 usuario = int(input('Digite para Aluno: 1 e para Professor: 2: '))
-total_dias = int(inpu('Digite o total de dias para cada usuário: '))
+total_dias = int(inpu('Digite para Aluno: 3 e para Professor 10: '))
 
 
 
-if usuario == 1 and
+if usuario == 1 and total_dias == 3:
+    print(f'O usuário é {nome} e tem {total_dias} dias para devolução do livro {nome_livro} ')
 
 
 
