@@ -1,6 +1,14 @@
 '''
 Exercícios sobre os comandos de condição em python
 '''
+
+
+#               https://github.com/ifmt-cba/lp20242
+#               github.com/jppreti/documents
+
+
+
+
 #---------------------------------------------------------------------------------------------------------------------------------------#
 #1. Faça um programa que leia dois valores numéricos inteiros e efetue
 #   a adição, caso o resultado seja maior que 10, apresentá-lo.
@@ -502,46 +510,16 @@ Exercícios sobre os comandos de condição em python
 #• Nome do livro:
 #• Tipo de usuário:
 #• Total de dias:
-nome = str(input('Digite o nome do Usuário: '))
-nome_livro = str(input('Digite o nome do Livro: '))
-usuario = int(input('Digite para Aluno: 1 e para Professor: 2: '))
-total_dias = int(inpu('Digite para Aluno: 3 e para Professor 10: '))
+
+# nome = str(input('Digite o nome do Usuário: '))
+# nome_livro = str(input('Digite o nome do Livro: '))
+# usuario = int(input('Digite para Aluno: 1 e para Professor: 2: '))
 
 
-
-if usuario == 1 and total_dias == 3:
-    print(f'O usuário é {nome} e tem {total_dias} dias para devolução do livro {nome_livro} ')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# if usuario == 1:
+#     print(f'O usuário {nome} é Aluno e tem 3 dias para devolução do livro {nome_livro} ')
+# else:
+#     print(f'O usuário {nome} é Professor e tem 10 dias para devolução do livro {nome_livro} ')
 
 
 #---------------------------------------------------------------------------------------------------------------------------------------#
@@ -550,34 +528,21 @@ if usuario == 1 and total_dias == 3:
 #12 km com um litro de gasolina, um tipo B faz 9 km e o tipo C 8 km por litro.
 
 
+# percurso = float(input('Digite o percurso do carro: '))
+# tipo_de_carro = int(input('Digite o Tipo de carro sendo, Carro A [1], Carro B [2], Carro C [3]: '))
 
 
+# consumo_carro_a = percurso / 12
+# consumo_carro_b = percurso / 9
+# consumo_carro_c = percurso / 8
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# if tipo_de_carro == 1:
+#     print (f'O carro A faz {consumo_carro_a:,.2f} km/l.')
+# elif tipo_de_carro == 2:
+#     print (f'O carro B faz {consumo_carro_b:,.2f} km/l.')
+# else:
+#     print (f'O carro C faz {consumo_carro_c:,.2f} km/l.')
 
 
 
@@ -596,34 +561,28 @@ if usuario == 1 and total_dias == 3:
 
 
 
+# def calcular_calorias():
+#     """Calcula a quantidade total de calorias de uma refeição."""
 
+#     # Dicionários para armazenar as informações nutricionais
+#     pratos = {"Vegetariano": 180, "Peixe": 230, "Frango": 250, "Carne": 350}
+#     sobremesas = {"Abacaxi": 75, "Sorvete diet": 110, "Mousse diet": 170, "Mousse chocolate": 200}
+#     bebidas = {"Chá": 20, "Suco de laranja": 70, "Suco de melão": 100, "Refrigerante diet": 65}
 
+#     # Solicita as escolhas do usuário
+#     prato = input("Escolha o prato: Vegetariano, Peixe, Frango ou Carne: ").title()
+#     sobremesa = input("Escolha a sobremesa: Abacaxi, Sorvete diet, Mousse diet ou Mousse chocolate: ").title()
+#     bebida = input("Escolha a bebida: Chá, Suco de laranja, Suco de melão ou Refrigerante diet: ").title()
 
+#     # Verifica se as escolhas são válidas e calcula as calorias
+#     if prato in pratos and sobremesa in sobremesas and bebida in bebidas:
+#         calorias_totais = pratos[prato] + sobremesas[sobremesa] + bebidas[bebida]
+#         print(f"A sua refeição possui {calorias_totais} calorias.")
+#     else:
+#         print("Opção inválida. Por favor, verifique as opções disponíveis.")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# # Chama a função para iniciar o cálculo
+# calcular_calorias()
 
 
 #---------------------------------------------------------------------------------------------------------------------------------------#

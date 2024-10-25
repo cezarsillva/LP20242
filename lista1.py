@@ -209,7 +209,7 @@
 #perímetro = 2 * (base + altura)
 #área = (base * altura)
 
-#print(f'O perímetro do retangualo é: {perímetro}')
+#print(f'O perímetro do retângulo é: {perímetro}')
 #print(f'A área do retangualo é: {área}')
 
 
