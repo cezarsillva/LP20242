@@ -608,28 +608,6 @@ Exercícios sobre os comandos de condição em python
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #---------------------------------------------------------------------------------------------------------------------------------------#
 #25. A prefeitura contratou uma firma especializada para manter os níveis de
 #poluição considerados ideais para um país do 1º mundo. As indústrias,
@@ -641,3 +619,17 @@ Exercícios sobre os comandos de condição em python
 #0,3 1º grupo
 #0,4 1º e 2º grupos
 #0,5 1º, 2º e 3º grupos
+
+
+
+
+# nome_empresa = str(input('Digite o nome da empresa: '))
+# indice_de_poluicao = float(input('Digite o indice de poluição da empresa: '))
+
+
+# if indice_de_poluicao <= 0.3:
+#     print(f'A empresa {nome_empresa} está inserida no 1° Grupo.')
+# elif indice_de_poluicao > 0.3 and indice_de_poluicao <= 0.4:
+#     print(f'A empresa {nome_empresa} está inserida no 2° Grupo.')
+# else:
+#     print(f'A empresa {nome_empresa} está inserida nos 1º, 2º e 3º grupos.')
