@@ -6,25 +6,29 @@ Lista de Exercícios referentes a estruturas de iteração (repetição)
 '''
 #print('-------------------------------------------------------------------------------------')
 # 1.Faça um programa que imprima todos os números de 1 até 100.
+
 def q1():
-
-
-
-
+    x = 1
+    while x <= 100:
+        print(x)
+        x = x + 1
 
 #print('-------------------------------------------------------------------------------------')
 #2. Faça um programa que imprima todos os números pares de 100 até 1.
-def q2():
 
+def q2():
+    for num in range(100,1,-2):
+        print(num, end=' ')
 
 
 
 
 #print('-------------------------------------------------------------------------------------')
 #3. Faça um programa que imprima os múltiplos de 5, no intervalo de 1 até 500.
+
 def q3():
-
-
+    for num in range(0,501,5):
+        print(num, end=' ')
 
 
 
@@ -34,9 +38,6 @@ def q3():
 #4. Faça umprograma que permita entrar com o nome, a idade e o sexo de 20
 #pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
 #e tiver mais de 21 anos.
-def q4():
-
-
 
 
 
@@ -44,9 +45,6 @@ def q4():
 #5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 #sucessivas, crie um programa que calcule o produto de dois números inteiros
 #lidos. Suponha que os números lidos sejam positivos.
-def q5():
-
-
 
 
 
@@ -57,11 +55,6 @@ def q5():
 #a partir da soma dos anteriores. Exemplo:
 #• 1 + 1 = 2, terceiro termo;
 #• 1 + 2 = 3, quarto termo, etc.
-def q6():
-
-
-
-
 
 
 
@@ -71,10 +64,6 @@ def q6():
 #prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
 #nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 #imprimir a média geral da turma.
-def q7():
-
-
-
 
 
 
@@ -89,12 +78,6 @@ def q7():
 #Salário menor que R$1300,00 Isento
 #Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 #Salário maior ou igual a R$2300,00 15% do salário bruto
-def q8():
-
-
-
-
-
 
 
 
@@ -111,9 +94,6 @@ def q8():
 #• A quantidade de pessoas que responderam regular;
 #• A percentagem de pessoas que responderam bom entre todos os expectadores
 #analisados.
-def q9():
-
-
 
 
 
@@ -133,13 +113,6 @@ def q9():
 #• O atleta mais pesado de cada time;
 #• O atleta mais jovem de cada time;
 #• O peso médio e a idade média de todos os participantes.
-def q10():
-
-
-
-
-
-
 
 
 
@@ -149,7 +122,6 @@ def q10():
 #11. Construa um programa que leia vários números e informe quantos números
 #entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido, o algoritmo
 #deverá cessar sua execução.
-def q11():
 
 
 
@@ -163,7 +135,6 @@ def q11():
 #ano, e um país B com 7 milhões de habitantes e uma taxa de natalidade de 2% ao
 #ano, fazer um programa que calcule e imprima o tempo necessário para que a
 #população do país A ultrapasse a população do país B.
-def q12():
 
 
 
@@ -193,12 +164,6 @@ def q12():
 #• O total de consumo para os três tipos de consumidor
 #• A média de consumo dos tipos 1.
 #• A média de consumo dos tipos 2.
-def q13():
-
-
-
-
-
 
 
 
@@ -207,10 +172,6 @@ def q13():
 #print('-------------------------------------------------------------------------------------') 
 #14. Faça um programa que leia vários números inteiros e apresente o fatorial de cada
 #número. O algoritmo encerra quando se digita um número menor do que 1.n
-def q14():
-
-
-
 
 
 
@@ -221,10 +182,6 @@ def q14():
 #imprima:
 #• total de pessoas com menos de 21 anos
 #• total de pessoas com mais de 50 anos
-def q15():
-
-
-
 
 
 
@@ -244,14 +201,6 @@ def q15():
 #  5 é o Divisor
 #  2 é o Quociente (resultado inteiro da divisão)
 #  0 é o Resto da Divisão
-def q16():
-
-
-
-
-
-
-
 
 
 
@@ -267,9 +216,6 @@ def q16():
 #• quantidade
 #O programa deverá processar novos pedidos até que o usuário digite 0 (zero)
 #como número do pedido.
-def q17():
-
-
 
 
 
@@ -288,9 +234,6 @@ def q17():
 #cliente e ao final o total faturado pela pousada.
 #O programa deverá ler novos clientes até que o usuário digite 0 (zero) como
 #número da conta.
-def q18():
-
-
 
 
 
@@ -309,8 +252,6 @@ def q18():
 #• média de cada turma;
 #• percentual de reprovados.
 #Obs.: Considere aprovado com nota >= 7.0
-def q19():
-
 
 
 
@@ -353,10 +294,6 @@ def q19():
 #• o número de pessoas de Niterói torcedoras do Fluminense
 #3.12. Exercícios da Aula 73
 #Obs.: O programa encerra quando se digita 0 para o time.
-def q20():
-
-
-
 
 
 
@@ -375,8 +312,6 @@ def q20():
 #que a renda familiar e a porcentagem gasta com alimentação e outras despesas
 #em relação às rendas pessoal e familiar.
 #Obs.: O programa encerra quando se digita 0 para a renda pessoal.
-def q21():
-
 
 
 
@@ -406,9 +341,6 @@ def q21():
 #imprimir tambémo número da carteira domotorista que obteve o maior número
 #de multas.
 #Obs.: O programa encerra ao ler a carteira de motorista de valor 0.
-def q22():
-
-
 
 
 
@@ -434,10 +366,6 @@ def q22():
 #atleta.
 #Para resolver este exercício, consulte a aula 7 que aborda o tratamento de strings,
 #como comparação e atribuição de textos.
-def q23():
-
-
-
 
 
 
@@ -467,8 +395,6 @@ def q23():
 #Deverá imprimir também o total de litros gastos na viagem. O programa encerra
 #quando o usuário informar umvalor negativo de velocidade.
 #74 Aula 3. Estruturas de Iteração
-def q24():
-
 
 
 
@@ -510,7 +436,6 @@ def q24():
 #g) ao final o programa deverá imprimir o total do imposto arrecadado pela
 #Receita Federal e o número de contribuintes isentos;
 #h) leve em consideração o fato de o primeiro CIC informado poder ser zero.
-def q25():
 
 
 
@@ -531,8 +456,6 @@ def q25():
 #número de pessoas que estavam assistindo;
 #• Calcule e imprima a porcentagem de audiência em cada canal.
 #Obs.: Para encerrar a entrada de dados, digite o número do canal zero.
-def q26():
-
 
 
 
@@ -559,8 +482,6 @@ def q26():
 #• fim da entrada de dados é marcada por uma matrícula inválida (matrículas
 #válidas de 1 a 5000);
 #• CR do aluno é igual à média aritmética de suas notas.
-def q27():
-
 
 
 
@@ -576,8 +497,6 @@ def q27():
 #• amédia das alturas das pessoas com idade entre 10 e 20 anos;
 #• a porcentagem de pessoas com peso inferior a 40 quilos entre todas as
 #pessoas analisadas.
-def q28():
-
 
 
 
@@ -599,7 +518,7 @@ def q28():
 #• o total vendido naquele dia, com todos os códigos juntos;
 #• o total vendido naquele dia em cada um dos códigos.
 #Obs.: Para encerrar a entrada de dados, digite o valor da mercadoria zero.
-def q29():
+
 
 
 
@@ -627,21 +546,7 @@ def q29():
 #analisadas.
 #Obs.: Para encerrar a entrada de dados, digite um número menor que zero para a
 #idade.
-def q30():
 
 
-
-
-
-
-
-
-
-
-
-#print('-------------------------------------------------------------------------------------')
-#NÃO MEXER
-#print('-------------------------------------------------------------------------------------')
 questao = int(input('Questão a ser executada: '))
 eval(f'q{questao}()')
-#print('-------------------------------------------------------------------------------------')
