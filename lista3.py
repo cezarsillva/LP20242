@@ -38,6 +38,17 @@ def q3():
 #4. Faça umprograma que permita entrar com o nome, a idade e o sexo de 20
 #pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
 #e tiver mais de 21 anos.
+def q4():
+
+ for x in range (1):
+     nome = str(input ('Digite seu nome: '))
+     idade = float(input ('Digite a idade: '))
+     sexo = str(input ('Digite o sexo: '))
+     
+     if sexo == "m" and idade > 21:
+         print(f'O nome da pessoa é: {nome}')
+     else:
+         print(f'Menor de idade.')
 
 
 
@@ -45,6 +56,45 @@ def q3():
 #5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 #sucessivas, crie um programa que calcule o produto de dois números inteiros
 #lidos. Suponha que os números lidos sejam positivos.
+def q5():
+
+    while True:
+        try:
+            primeironum = int(input("Primeiro número: "))
+            break
+        except ValueError:
+            print("Ops! Esse não é um número válido. Tente novamente...")
+        else:
+            erro = False
+        finally:
+            print(f'O primeiro número está correto.')
+
+    while True:
+        try:
+            segundonum = int(input("Primeiro número: "))
+            break
+        except ValueError:
+            print("Ops! Esse não é um número válido. Tente novamente...")
+
+        else:
+            erro = False
+        finally:
+            print(f'O segundo número está correto.')
+
+            x = 1
+            r = 0
+            while x <= segundonum:
+                r = r + primeironum
+                x = x + 1
+            print(f"{primeironum} x {segundonum} = {r}")
+
+
+
+
+
+
+
+
 
 
 
