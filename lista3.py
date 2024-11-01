@@ -134,7 +134,7 @@ def q7():
 
     soma = 0
 
-    for x in range (2):
+    for x in range (15):
         nome = str(input("Digite o nome do aluno: "))
         nota1 = input_float("Digite a primeira nota: ")
         nota2 = input_float("Digite a segunta nota: ")
@@ -144,7 +144,7 @@ def q7():
 
         print(f'A nota da prova 1 é {nota1} e a nota de prova 2 é {nota2} sendo sua média: {media}')
 
-    mediageral = soma / 2
+    mediageral = soma / 15
 
     print(f'A média geral de turma é: {mediageral}')
 
@@ -159,7 +159,22 @@ def q7():
 #Salário menor que R$1300,00 Isento
 #Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 #Salário maior ou igual a R$2300,00 15% do salário bruto
+def q8():
 
+    for x in range (2):
+        nome = str(input("Digite o Nome completo do funcionário: "))
+        salario_bruto = input_float("Digite o Salário Bruto do funcionário: ")
+
+    
+
+        if salario_bruto < 1300:
+            print(f'Funcionário isento de imposto.')
+
+        elif salario_bruto >= 1300 and salario_bruto < 2300:
+            print(f'Funcionário {nome} pagará o {salario_bruto * 10 / 100} de imposto.')
+
+        else:
+            print(f'Funcionário {nome} pagará o {salario_bruto * 15 / 100} de imposto.')
 
 
 
