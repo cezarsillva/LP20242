@@ -4,6 +4,9 @@ https://github.com/ifmt-cba/lp20242
 
 Lista de Exercícios referentes a estruturas de iteração (repetição)
 '''
+
+from biblioteca import *
+
 #print('-------------------------------------------------------------------------------------')
 # 1.Faça um programa que imprima todos os números de 1 até 100.
 
@@ -91,20 +94,32 @@ def q5():
 
 
 
-
-
-
-
-
-
-
-
 #print('-------------------------------------------------------------------------------------')
+
 #6. Crie um programa que imprima os 20 primeiros termos da série de Fibonacci.
 #Observação: os dois primeiros termos desta série são 1 e 1 e os demais são gerados
 #a partir da soma dos anteriores. Exemplo:
 #• 1 + 1 = 2, terceiro termo;
 #• 1 + 2 = 3, quarto termo, etc.
+
+def q6():
+
+ termo = int(input("Digite o numero de termos: "))
+
+ termo1 = 0
+ termo2 = 1
+
+ print('{} * {}'.format(termo1, termo2), end='')
+
+ cont = 3
+ while cont <= 20:
+     termo3 = termo1 + termo2
+     print(' * {}'.format(termo3), end='')
+     termo1 = termo2
+     termo2 = termo3
+     cont += 1
+ print(' = final')
+
 
 
 
@@ -115,7 +130,23 @@ def q5():
 #nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 #imprimir a média geral da turma.
 
+def q7():
 
+    soma = 0
+
+    for x in range (2):
+        nome = str(input("Digite o nome do aluno: "))
+        nota1 = input_float("Digite a primeira nota: ")
+        nota2 = input_float("Digite a segunta nota: ")
+
+        media = (nota1 + nota2) / 2
+        soma = soma + media
+
+        print(f'A nota da prova 1 é {nota1} e a nota de prova 2 é {nota2} sendo sua média: {media}')
+
+    mediageral = soma / 2
+
+    print(f'A média geral de turma é: {mediageral}')
 
 
 
