@@ -190,13 +190,26 @@ def q8():
 #• A quantidade de pessoas que responderam regular;
 #• A percentagem de pessoas que responderam bom entre todos os expectadores
 #analisados.
+def q9():
 
-
-
-
-
-
-
+    qtdePessoasExcelente = 0
+    somaIdadeExcelente = 0
+    qtdePessoasRegular = 0
+    qtdePessoasBom = 0
+    qtdeTotalPessoas = int(input('Número de Pessoas: '))
+    for x in range(qtdeTotalPessoas):
+        idade = int(input('Idade: '))
+        opiniao = int(input('Opinião ([3]-Excelente - [2]-Bom - [1]-Regular): '))
+        match(opiniao):
+            case 1: qtdePessoasRegular += 1
+            case 2: qtdePessoasBom += 1
+            case 3:
+                qtdePessoasExcelente +=1
+                somaIdadeExcelente += idade
+            case _: print('Opção Inválida!')
+    print(f'Média idade excelente: {somaIdadeExcelente/qtdePessoasExcelente}')
+    print(f'Qtde de pessoas regular: {qtdePessoasRegular}')
+    print(f'% de pessoas que responderam bom: {qtdePessoasBom/qtdeTotalPessoas*100}%')
 
 
 #print('-------------------------------------------------------------------------------------')
@@ -209,18 +222,109 @@ def q8():
 #• O atleta mais pesado de cada time;
 #• O atleta mais jovem de cada time;
 #• O peso médio e a idade média de todos os participantes.
+def q10():
+
+    somatimesi = 0
+    mediatimesi= 0
+    somatimesp = 0
+    mediatimesp = 0
+
+    somamediaidadet = 0
+    somamediapesot = 0
+
+    maior = 0
+    menor = 1000
+
+    print('\n')
+
+    for p in range (3):
+        print(f'---------------------------------------')
+        for j in range (2):
+
+            print(f'time:{p+1}')
+            print(f' jogador:{j+1}')
+
+            idade = int(input("Digite a idade do jogador: "))
+            peso = float(input("Digite o peso do jogador: "))
+        
+            if peso > maior:
+                maior = peso
+
+            if idade < menor:
+                menor = idade
+
+            print('\n')
+
+            somatimesi += idade
+            somatimesp += peso
 
 
+        mediatimesi = somatimesi / 2
+        mediatimesp = somatimesp / 2
 
+        somamediaidadet += mediatimesi
+        somamediapesot += mediatimesp
+
+            
+
+
+        print(f'====================================')
+
+        print(f'O peso médio do time é: {mediatimesp}')
+        print(f'A idade média do time é: {mediatimesi}')
+        print(f'O atleta mais pesado do time tem: {maior} kg')
+        print(f'O atleta mais jovem do time tem: {menor} anos.')
+        
+        print(f'====================================')
+        
+        
+        somatimesi = 0
+        mediatimesi= 0
+        somatimesp = 0
+        mediatimesp = 0
+
+        maior = 0
+        menor = 1000
+
+        print('\n')
+
+    mediatodospi = somamediaidadet / 3
+    mediatodospp = somamediapesot / 3
+
+    print('\n')
+
+    print(f'O peso médio de todos os participantes é: {mediatodospp} e a idade média de todos os participantes é:{mediatodospi}')
+
+    print('\n')
 
 
  #print('-------------------------------------------------------------------------------------')   
 #11. Construa um programa que leia vários números e informe quantos números
 #entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido, o algoritmo
 #deverá cessar sua execução.
+def q11():
+    #Exemplo 1:
 
+    contador = 100
 
+    while contador < 200:
+        contador += 1
 
+        print(f'{contador}')
+
+    print('\n')
+
+    print(f'====================================')
+
+    print('\n')
+
+    # #Exemplo 2:
+
+    total = 100
+
+    for i in range (100, 200):
+        total = total + 1
+        print(total)
 
 
 
@@ -232,12 +336,18 @@ def q8():
 #ano, fazer um programa que calcule e imprima o tempo necessário para que a
 #população do país A ultrapasse a população do país B.
 
+def q12():
 
+    a = 500000000
+    b = 700000000
+    ano = 0
 
-
-
-
-
+    while a < b:
+        a += a * 0.03
+        b += b * 0.02
+        ano += 1
+        
+    print ( "O Pais A ultrapassa o pais B em %d anos" %ano )
 
 
 
@@ -262,12 +372,163 @@ def q8():
 #• A média de consumo dos tipos 2.
 
 
+#• número do consumidor
+#• quantidade de kWh consumidos durante o mês
+#• tipo (código) do consumidor
+#1-residencial, preço em reais por kWh = 0,3
+#2-comercial, preço em reais por kWh = 0,5
+#3-industrial, preço em reais por kWh = 0,7
+
+#Os dados devem ser lidos até que seja encontrado o consumidor com número 0
+#(zero). O programa deve calcular e imprimir:
+
+#• O custo total para cada consumidor
+#• O total de consumo para os três tipos de consumidor
+#• A média de consumo dos tipos 1.
+#• A média de consumo dos tipos 2.
+
+def q13():
+
+    total_consumo_residencial = 0
+    total_consumo_comercial = 0
+    total_consumo_industrial = 0
+
+    total_consumidores_tipo1 = 0
+    total_consumidores_tipo2 = 0
+
+    total_consumo_tipo1 = 0
+    total_consumo_tipo2 = 0
+
+    preco_por_kwh = 0
+
+    print('\n')
+    for x in range(4):
+        print(f'#####################################################################################################################')
+        print(f'Consumidor:{x+1}')
+        print('\n')
+
+        erro=True
+        while erro == True:
+            try:
+                numero_consumidor = int(input("Digite o número do consumidor: "))
+                erro=False
+            except ValueError:
+                print(f'Valor Invalido, Digite apenas numeros inteiros.')
+                erro=True
+        erro=True
+        while erro == True:
+            try:
+                quantidade_kwh = float(input("Digite a quantidade de kWh consumidos durante o mês: "))
+                erro=False
+            except ValueError:
+                print(f'Valor Invalido, Digite o valor em números reais.')
+                erro=True
+        erro=True
+        while erro == True:
+            try:
+                tipo_consumidor = int(input("Digite o tipo de consumidor (1 - residencial, 2 - comercial, 3 - industrial): "))
+                if tipo_consumidor < 1 or tipo_consumidor > 3:
+                    raise ValueError('Valor inválido')
+                erro=False
+            except ValueError:
+                print(f'Valor Invalido, Digite apenas o número 1 , 2 ou 3.')
+                erro=True
+            finally:
+                print(f'Insira a informação do próximo consumidor!!!!!!')
+
+        if tipo_consumidor == 1:
+            preco_por_kwh = 0.3
+            total_consumo_residencial += quantidade_kwh
+            total_consumidores_tipo1 += 1
+            total_consumo_tipo1 += quantidade_kwh
+        elif tipo_consumidor == 2:
+            preco_por_kwh = 0.5
+            total_consumo_comercial += quantidade_kwh
+            total_consumidores_tipo2 += 1
+            total_consumo_tipo2 += quantidade_kwh
+        elif tipo_consumidor == 3:
+            preco_por_kwh = 0.7
+            total_consumo_industrial += quantidade_kwh
+        
+        
+        custo_total = quantidade_kwh * preco_por_kwh
+
+        print('\n')
+        print('----------------------------------------------------------------------------')
+        print(f"O custo total para o consumidor {numero_consumidor} é: R$ {custo_total:.2f}")
+        print('----------------------------------------------------------------------------')
+    media_consumo_tipo1 = total_consumo_tipo1 / total_consumidores_tipo1 if total_consumidores_tipo1 != 0 else 0
+    media_consumo_tipo2 = total_consumo_tipo2 / total_consumidores_tipo2 if total_consumidores_tipo2 != 0 else 0
+
+
+    print("Resumo:")
+
+    print(f"Total de consumo residencial: {total_consumo_residencial} kWh")
+    print(f"Total de consumo comercial: {total_consumo_comercial} kWh")
+    print(f"Total de consumo industrial: {total_consumo_industrial} kWh")
+    print(f"Média de consumo do tipo 1: {media_consumo_tipo1:.2f} kWh")
+    print(f"Média de consumo do tipo 2: {media_consumo_tipo2:.2f} kWh")
+    print('\n')
+    print(f'#####################################################################################################################')
+
+
+#Exemplo meu sala de aula somar quantidade de consumidor:
+
+
+# somaconsumidor1 = 0
+# somaconsumidor2 = 0
+# somaconsumidor3 = 0
+
+# print('\n')
+# for x in range(4):
+#     print(f'########################################################################################')
+#     print(f'Consumidor:{x+1}')
+#     print('\n')
+   
+#     numeroconsumidor = int(input("Digite o número do consumidor: "))
+#     quantidadekwh = float(input("Digite a quantidade de KWH /mês: "))
+#     codigotipoconsumidor = int(input('Informe o código do consumidor sendo: [1 = Residencial] [2 = Comercial] [3 = Industrial]: '))
+
+
+
+
+#     if codigotipoconsumidor == 1:
+#         somaconsumidor1 += 1
+#     elif codigotipoconsumidor == 2:
+#         somaconsumidor2 += 1
+#     elif codigotipoconsumidor == 3:        
+#         somaconsumidor3 += 1
+#     else:
+#         print("Tipo de consumidor inválido!")
+
+# print(f'A quantidade de consumidor tipo 1 é:{somaconsumidor1}')
+# print(f'A quantidade de consumidor tipo 1 é:{somaconsumidor2}')
+# print(f'A quantidade de consumidor tipo 1 é:{somaconsumidor3}')
 
 
 
 #print('-------------------------------------------------------------------------------------') 
 #14. Faça um programa que leia vários números inteiros e apresente o fatorial de cada
 #número. O algoritmo encerra quando se digita um número menor do que 1.n
+def q14():
+
+
+        def calcular_fatorial(numero):
+            if numero == 0:
+                return 1
+            else:
+                return numero * calcular_fatorial(numero - 1)
+
+        while True:
+            numero = int(input("Digite um número inteiro (digite um número menor que 1 para sair): "))
+            
+            if numero < 1:
+                print(" FIM DO CALCULO")
+                break
+            
+            fatorial = calcular_fatorial(numero)
+            print(f"O fatorial de {numero} é: {fatorial}")
+
 
 
 
@@ -279,7 +540,27 @@ def q8():
 #• total de pessoas com menos de 21 anos
 #• total de pessoas com mais de 50 anos
 
+def q15():
 
+    menos_de_21 = 0
+    mais_de_50 = 0
+    print('\n')
+    for x in range(6):
+        print(f'#####################################################################################################################')
+        print(f'PESSOAS:{x+1}')
+        print('\n')
+        idade = int(input("Digite a idade da pessoa: "))
+
+        if idade < 21:
+            menos_de_21 += 1
+        elif idade > 50:
+            mais_de_50 += 1
+
+    print(f'#####################################################################################################################')
+    print(f'------------------------------------------------------')
+    print(f"Total de pessoas com menos de 21 anos: {menos_de_21}")
+    print(f"Total de pessoas com mais de 50 anos: {mais_de_50}")
+    print(f'------------------------------------------------------')
 
 
 
@@ -301,6 +582,21 @@ def q8():
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #print('-------------------------------------------------------------------------------------')
 
 #17. Crie um programa que possa ler um conjunto de pedidos de compra e
@@ -313,10 +609,43 @@ def q8():
 #O programa deverá processar novos pedidos até que o usuário digite 0 (zero)
 #como número do pedido.
 
+def q17():
 
 
+    def calcular_total_pedido(preco_unitario, quantidade):
+        return preco_unitario * quantidade
 
+    total_compra = 0
 
+    while True:
+
+        numero_pedido = input("Digite o número do pedido (ou '0' para finalizar a compra): ")
+        
+        
+        if numero_pedido.lower() == '0':
+            print("COMPRA FINALIZADA COM SUCESSO.")
+            break
+        
+        dia_pedido = int(input("Digite o dia do pedido: "))
+        mes_pedido = int(input("Digite o mês do pedido: "))
+        ano_pedido = int(input("Digite o ano do pedido: "))
+        preco_unitario = float(input("Digite o preço unitário do item: "))
+        quantidade = int(input("Digite a quantidade do item: "))
+        
+        
+        total_pedido = calcular_total_pedido(preco_unitario, quantidade)
+        
+        total_compra += total_pedido
+        
+        print(f"--------------------------------------------------------------------")
+        print(f"Pedido {numero_pedido} - Data: {dia_pedido}/{mes_pedido}/{ano_pedido}")
+        print(f"Preço unitário: R$ {preco_unitario:.2f}")
+        print(f"Quantidade: {quantidade}")
+        print(f"Total do pedido: R$ {total_pedido:.2f}")
+        print(f"--------------------------------------------------------------------")
+        print()
+
+    print(f"Valor total da compra: R$ {total_compra:.2f}")
 
 
 
