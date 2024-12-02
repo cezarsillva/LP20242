@@ -19,18 +19,23 @@
 
 #media = (n1 + n2) / 2
 
+#print('\n')
 #print(f'A nota 1 é: {n1}')
+#print('\n')
 #print(f'A nota 2 é: {n2}')
+#print('\n')
 #print(f'A média é: {media}')
 
+#print('\n')
+#print('--------------------------------------------')
 #if media >= 7:
 #    print(f'Aluno Aprovado.')
 #elif media < 3:
 #    print(f'Aluno Reprovado.')
 #else:
 #    print(f'Aluno ficou de prova final.')
-
-
+#print('--------------------------------------------')
+#print('\n')
 
 # 3. Faça um programa que apresente um menu com 4 opções:
 # [1] - Cadastrar
