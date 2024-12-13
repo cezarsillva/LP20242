@@ -660,12 +660,36 @@ def q17():
 #O programa deverá ler novos clientes até que o usuário digite 0 (zero) como
 #número da conta.
 
+def q18():
+
+    
+        while True:
+            # Solicita o número da conta
+            numero_conta = int(input("Digite o número da conta (ou 0 para encerrar): "))
+            
+            # Verifica se o número da conta é 0, e encerra o loop se for
+            if numero_conta == 0:
+                break
+
+            nome = str(input('Digite o nome do Cliente: '))
+            quantidade_diaria = int(input('Digite a quantidade de diária: '))
+            Valor_diaria = float(input('Digite o valor da diária: '))
+            
+            
+            valor_cliente = quantidade_diaria * Valor_diaria
+
+            print('\n')
+            print(f'Valor total de Diarias do cliente: {valor_cliente}\n')
 
 
+            if quantidade_diaria < 10:
+                print(f'O cliente {nome} com o código de conta {numero_conta} ficou {quantidade_diaria} dias e pagara {valor_cliente + 15} reais.\n')
+                    
+            if quantidade_diaria >= 10:
+                print(f'O cliente {nome} com o código de conta {numero_conta} ficou {quantidade_diaria} dias e pagara {valor_cliente + 8} reais.\n')
 
 
-
-
+        print(f'O faturamento total da pousada é: ')
 
 
 
