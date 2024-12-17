@@ -8,6 +8,17 @@ Lista de Exercícios referentes a coleções em python
 #for encontrado o programa deve imprimir a posição desse número na lista, caso
 #contrário, deve imprimir a mensagem: "Nao encontrado!".
 
+
+
+
+
+
+
+
+
+
+
+
 #2. Faça um programa que armazene 10 letras em uma lista e imprima uma listagem
 #numerada.
 
