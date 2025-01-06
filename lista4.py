@@ -1,44 +1,184 @@
-import random
+
 '''
 Lista de Exercícios referentes a coleções em python
 '''
+from biblioteca import *
 
+#print('-------------------------------------------------------------------------------------------------')
 #1. Faça um programa que armazene 15 números inteiros em uma lista e depois
 #permita que o usuário digite um número inteiro para ser buscado na lista, se
 #for encontrado o programa deve imprimir a posição desse número na lista, caso
 #contrário, deve imprimir a mensagem: "Nao encontrado!".
 
+def q1():
+
+    numeros = []
+    print("Digite 15 números inteiros:")
+
+    for i in range(15):
+        num = int(input(f"Digite o {i+1}º número: "))
+        numeros.append(num)
+
+    numero_busca = int(input("Digite um número para buscar na lista: "))
 
 
+    if numero_busca in numeros:
+        posicao = numeros.index(numero_busca)
+        print(f"O número {numero_busca} foi encontrado na posição {posicao}.")
+    else:
+        print("Não encontrado!")
 
 
-
-
-
-
-
-
-
+#print('-------------------------------------------------------------------------------------------------')
 #2. Faça um programa que armazene 10 letras em uma lista e imprima uma listagem
 #numerada.
 
+def q2():
+
+    letras = []
+    print("Digite 10 letras: ")
+
+    for i in range(10):
+        letra = input(f"Digite a {i+1}ª letra: ")
+        letras.append(letra)
+
+    print("\nListagem das letras:")
+    for i, letra in enumerate(letras, start=1):
+        print(f"{i}. {letra}")
+
+
+
+#print('-------------------------------------------------------------------------------------------------')
 #3. Construa uma programa que armazene 15 números em uma lista e imprima
 #uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
 
+def q3():
+
+    numeros = []
+    print("Digite 15 números inteiros:")
+
+    for i in range(15):
+        num = int(input(f"Digite o {i+1}º número: "))
+        numeros.append(num)
+
+    print("\nListagem dos números com a indicação de par ou ímpar:")
+    for i, num in enumerate(numeros, start=1):
+        if num % 2 == 0:
+            print(f"{i}. {num} - Par")
+        else:
+            print(f"{i}. {num} - Ímpar")
+
+
+#print('-------------------------------------------------------------------------------------------------')
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
 
+def q4():
+
+    numeros = []
+
+    
+    for i in range(8):
+        numero = int(input(f"Digite o {i+1}º número: "))
+        numeros.append(numero)
+
+    
+    print("\nNúmeros inseridos:")
+    for numero in numeros:
+        print(numero)
+
+    
+    multiplo_seis = 0
+    for numero in numeros:
+        if numero % 6 == 0:
+            multiplo_seis += 1
+
+    
+    print(f"\nTotal de números múltiplos de seis: {multiplo_seis}")
+
+
+
+#print('-------------------------------------------------------------------------------------------------')
 #5. Faça um programa que armazene as notas das provas 1 e 2 de 15 alunos. Calcule
 #e armazene a média arredondada. Armazene também a situação do aluno: 1-
 #Aprovado ou 2-Reprovado. Ao final o programa deve imprimir uma listagem
 #contendo as notas, a média e a situação de cada aluno em formato tabulado.
 #Utilize quantas listas forem necessárias para armazenar os dados.
 
+def q5():
+
+    soma = 0
+
+    notas_provas = []
+
+
+    for i in range(1, 3):
+        print("\n==============================\n")
+        
+        print(f"Aluno - {i}\n")
+
+
+        nome = input('Digite o nome do Aluno: ')
+        prova1 = float(input("\nDigite a nota da prova 1: "))
+        prova2 = float(input("Digite a nota da prova 2: "))
+        notas_provas.append((prova1, prova2))
+
+
+        media = (prova1 + prova2) / 2
+        soma = soma + media
+
+        
+
+
+
+
+    print("\n-----------------------------------------------------")
+    print("Notas dos alunos:")
+    print("-----------------------------------------------------")
+
+
+    for i, notas in enumerate(notas_provas, 1):
+
+        print(f"Aluno {i}") 
+        print(f"Prova 1: |{notas[0]} | Prova 2: |{notas[1]}|\n")
+
+        print(f'A média do aluno {i} é {media}')
+
+
+        if media >= 7:
+            print(f'Aluno aprovado com a média {media}.')
+
+        else:
+            print(f'Aluno Reprovado com media {media}!!!')
+
+
+    mediageral = soma / i
+
+    print(f'A média geral de turma é: {mediageral}')
+
+
+
+
+
+#print('-------------------------------------------------------------------------------------------------')
 #6. Construa um programa que permita armazenar o salário de 20 pessoas. Calcular
 #e armazenar o novo salário sabendo-se que o reajuste foi de 8%. Imprimir uma
 #listagem numerada com o salário e o novo salário. Declare quantas listas forem
 #necessárias.
 
+
+
+
+
+
+
+
+
+
+
+
+
+#print('-------------------------------------------------------------------------------------------------')
 #7. Crie um programa que leia o preço de compra e o preço de venda de 100 mercadorias
 #(utilize listas). Ao final, o programa deverá imprimir quantas mercadorias
 #proporcionam:
@@ -46,19 +186,86 @@ Lista de Exercícios referentes a coleções em python
 #• 10% <= lucro <= 20%
 #• lucro > 20%
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#print('-------------------------------------------------------------------------------------------------')
 #8. Construa um programa que armazene o código, a quantidade, o valor de compra
 #e o valor de venda de 30 produtos. A listagem pode ser de todos os produtos ou
 #somente de um ao se digitar o código. Utilize dicionário como estrutura de dados.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#print('-------------------------------------------------------------------------------------------------')
 #9. Faça um programa que leia dois conjuntos de números inteiros, tendo
 #cada um 10 elementos. Ao final o programa deve listar os elementos comuns aos
 #conjuntos.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#print('-------------------------------------------------------------------------------------------------')
 #10. Faça um programa que leia uma lista com 10 elementos e obtenha outra lista resultado
 #cujos valores são os fatoriais da lista original.
 #Imprimir o maior e o menor, sem ordenar, o percentual de números pares e a
 #média dos elementos da lista.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#print('-------------------------------------------------------------------------------------------------')
 #11. Imprimir o maior e o menor, sem ordenar, o percentual de números pares e a
 #média dos elementos da lista.
 
@@ -106,3 +313,9 @@ Lista de Exercícios referentes a coleções em python
 
 #20. Faça um programa que leia a matrícula e a média de 100 alunos. Ordene da maior
 #para a menor nota e imprima uma relação contendo todas as matrículas e médias.
+
+
+
+
+questao = int(input('\nQuestão a ser executada: '))
+eval(f'q{questao}()')

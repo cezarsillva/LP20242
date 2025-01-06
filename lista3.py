@@ -144,9 +144,7 @@ def q7():
 
         print(f'A nota da prova 1 é {nota1} e a nota de prova 2 é {nota2} sendo sua média: {media}')
 
-    mediageral = soma / 15
-
-    print(f'A média geral de turma é: {mediageral}')
+    soma = soma + media
 
 
 
