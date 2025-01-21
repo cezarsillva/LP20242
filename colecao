@@ -1,4 +1,2 @@
-valores = [0,1]
-
-print(valores)
-
+lista_compras = ['banana','laranja','maçã']
+print(lista_compras)
