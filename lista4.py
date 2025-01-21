@@ -167,14 +167,26 @@ def q5():
 #necessárias.
 
 
+def q6():
 
+    # Lista para armazenar os salários
+    salarios = []
+    novos_salarios = []
 
+    # Entrada dos salários das 20 pessoas
+    for i in range(3):
+        salario = float(input(f"Digite o salário da {i+1}ª pessoa: R$ "))
+        salarios.append(salario)
 
+    # Cálculo do novo salário com reajuste de 8%
+    for salario in salarios:
+        novo_salario = salario * 1.08  # Reajuste de 8%
+        novos_salarios.append(novo_salario)
 
-
-
-
-
+    # Imprimir a listagem numerada com salários e novos salários
+    print("\nListagem dos Salários e Novos Salários:")
+    for i in range(3):
+        print(f"{i+1}. Salário: R$ {salarios[i]:.2f} -> Novo Salário: R$ {novos_salarios[i]:.2f}")
 
 
 
@@ -182,24 +194,44 @@ def q5():
 #7. Crie um programa que leia o preço de compra e o preço de venda de 100 mercadorias
 #(utilize listas). Ao final, o programa deverá imprimir quantas mercadorias
 #proporcionam:
+
 #• lucro < 10%
 #• 10% <= lucro <= 20%
 #• lucro > 20%
 
+def q7():
+
+    produtos = []
+
+    produto = dict()
+    precodecompra = float(input('Digite o preço de compra do produto: '))
+    precodevenda = float(input('Digite o preço de venda do produto: '))
+    produto['precocompra'] = precodecompra
+    produtos.append(produto)
+    
+
+
+    print(produto)
 
 
 
 
 
 
+#    produto = []
+#    precoproduto = []
+#    tudo = []
 
 
+#    for i in range(5):
+#        nomeproduto = input(f'Digite o nome do {i+1}ª produto: ')
+#        valorproduto = float(input(f"Digite o valor do {i+1}ª produto: R$ "))
+#        produto.append(nomeproduto)
+#        precoproduto.append(valorproduto)
 
-
-
-
-
-
+#        ordem = produto[i],precoproduto[i]
+#        tudo.append(ordem)
+#    print(tudo)
 
 
 #print('-------------------------------------------------------------------------------------------------')
