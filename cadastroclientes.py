@@ -56,3 +56,14 @@ while cadastrar_cliente == 's':
 
 #comando_abrir_arquivo = "notepad " + nome_arquivo
 #os.system(comando_abrir_arquivo)
+
+
+
+
+
+
+
+#Interface Grafica Cadastro de Clientes
+
+
+
